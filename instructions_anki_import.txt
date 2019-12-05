@@ -1,0 +1,6 @@
+To import Kindle highlights as Anki cards, do the following. 
+
+1. Export the notes file from Kindle 
+2. Rename that file as index3.html
+3. Run import_anki.command
+4. Import the resulting text file 'your_file.txt' into Anki with a ';' separator.
