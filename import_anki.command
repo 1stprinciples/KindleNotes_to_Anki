@@ -21,6 +21,6 @@ for index, content in my_enum:
             highlights.append(list(enumerate(soup.findAll("div")))[index-1][1].text.strip())
             notes.append(list(enumerate(soup.findAll("div")))[index+1][1].text.strip())
 
-with open('your_file.txt', 'w') as f:
+with open('your_file.txt', 'w+') as f:
     for i in range(0,len(highlights)):
-        f.write( notes[i] +';' + highlights[i] + "\n")
+        f.write( notes[i] +'|' + highlights[i] + "\n")
